@@ -11,7 +11,7 @@ UTF8 for encoding
 Encrypt(KEY, FILE)
 
     KEY = SHA(DECODE(KEY)) // FOR FIXED SIZE
-    SHA(KEY) + SHA(FILE) + IV + AES(KEY, IV, FILE)
+    OUTPUT = SHA(KEY) + SHA(FILE) + IV + AES(KEY, IV, FILE)
 
 ## DECRYPTION
 
